@@ -1,0 +1,5 @@
+classes= 6
+train  = train/train.txt
+valid  = val/val.txt
+names = name.txt
+backup = weights

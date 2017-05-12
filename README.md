@@ -23,8 +23,12 @@ test:
 # ./darknet detect cfg/coco.data cfg/yolo.cfg yolo.weights data/dog.jpg
 ```
 
-test multiple images and output to `result.txt`:
+test multiple images and output to `results/`:
 
 ```bash
 ./darknet detector valid cfg/coco.data cfg/yolo.cfg yolo.weights
 ```
+
+## experiments
+
+### `exper/hand_detection`
