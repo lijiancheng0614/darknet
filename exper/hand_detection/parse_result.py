@@ -25,9 +25,12 @@ def normalize(bbox, w, h):
 
 threshold = 0.225
 fd = open(output_path, 'w')
-keys = sorted(ans.keys())
-for k in keys:
-    if ans[k][1] >= threshold:
+# keys = sorted(ans.keys())
+# for k in keys:
+for k in range(600):
+    if k in ans and ans[k][1] >= threshold:
         fd.write('{} {} {}\n'.format(k, ans[k][0] + 1, ' '.join(['{:.6f}'.format(i) for i in normalize(ans[k][2:], 640, 480)])))
+    else:
+        fd.write('{} 0 0.0 0.0 0.0 0.0\n'.format(k))
 
 fd.close()
