@@ -2,9 +2,9 @@
 
 ## Run
 
-1. Put color image in `train/JPEGImages`.
+1. Generate rgbd data  in `train/images` by `gen_rgbd.py` using `train/color_image/` and `train/depth_image_aligned/`.
 
-2. Generate labels by `gen_labels.py` using `train/label.txt`.
+2. Generate labels in `train/labels` by `gen_labels.py` using `train/label.txt`.
 
 3. Run `train.sh`
 

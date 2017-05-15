@@ -13,7 +13,7 @@ for line in fd:
     line = line.split()
     image_id = line[0]
     label = int(line[1])
-    image_path = '{}/train/JPEGImages/{}.jpg'.format(wd, image_id)
+    image_path = '{}/train/images/{}.tiff'.format(wd, image_id)
     list_file.write('{}\n'.format(image_path))
     out_file = open(os.path.join(label_dir, image_id + '.txt'), 'w')
     b = map(float, line[2:])
